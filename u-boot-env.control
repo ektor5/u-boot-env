@@ -1,0 +1,29 @@
+Section: misc
+Priority: optional
+Homepage: http://www.udoo.org
+Standards-Version: 3.6.2
+
+Package: u-boot-env 
+Version: 2013.11 
+Maintainer: Ettore Chimenti <ek5.chimenti@gmail.com>
+# Pre-Depends: <comma-separated list of packages>
+# Depends: 
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+# Provides: <comma-separated list of packages>
+# Replaces: <comma-separated list of packages>
+Architecture: armel
+# Copyright: <copyright file; defaults to GPL2>
+# Changelog: <changelog file; defaults to a generic changelog>
+# Readme: <README.Debian file; defaults to a generic one>
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+Files: fw_env.config /etc/
+ fw_printenv /usr/bin/
+ fw_setenv /usr/bin/
+# <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Description: Das U-Boot tools for environment variables management
+ This package provides the fw_printenv/fw_setenv tool to show/modify the 
+ environment variables of the U-Boot  
+ .
+ The MMC patch is applied in this package
