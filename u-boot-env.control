@@ -17,9 +17,9 @@ Architecture: armel
 # Changelog: <changelog file; defaults to a generic changelog>
 # Readme: <README.Debian file; defaults to a generic one>
 # Extra-Files: <comma-separated list of additional files for the doc directory>
-Files: fw_env.config /etc/
- fw_printenv /usr/bin/
- fw_setenv /usr/bin/
+Files: fw_env.config /etc/fw_env.config
+ fw_printenv /usr/bin/fw_printenv
+ fw_printenv /usr/bin/fw_setenv
 # <pair of space-separated paths; First is file to include, second is destination>
 #  <more pairs, if there's more than one file to include. Notice the starting space>
 Description: Das U-Boot tools for environment variables management
